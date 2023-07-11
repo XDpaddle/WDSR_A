@@ -46,8 +46,8 @@ All experiments also use images with BICUBIC degradation on RGB space.
 ### WDSR Baseline (=WDSR-A) Example
 
 ```bash
-python train.py --dataset-dir "/root/autodl-tmp/paddle-FSRCNN/SR/DATA/DIV2K" \
-                --output-dir "/root/autodl-tmp/paddle-FSRCNN/SR/WDSR/outputs_a" \
+python train.py --dataset-dir "/root/autodl-tmp/paddle_SR/SR/DATA/DIV2K" \
+                --output-dir "/root/autodl-tmp/paddle_SR/SR/WDSR/outputs_a" \
                 --model "WDSR-A" \
                 --scale 2 \
                 --n-feats 32 \
@@ -67,11 +67,11 @@ Trained model is evaluated on DIV2K validation 100 images.
 ```bash
 WDSR-A
 python eval.py --model "WDSR-A" \
-               --dataset-dir "/root/autodl-tmp/paddle-FSRCNN/SR/DATA/DIV2K" \
-               --checkpoint-file "/root/autodl-tmp/paddle-FSRCNN/SR/WDSR/outputs_a/WDSR-A-f32-b16-r4-x2-best.pdiparams.tar"
+               --dataset-dir "/root/autodl-tmp/paddle_SR/SR/DATA/DIV2K" \
+               --checkpoint-file "/root/autodl-tmp/paddle_SR/SR/WDSR/outputs_a/WDSR-A-f32-b16-r4-x2-best.pdiparams.tar"
                
 ```
 
-| Model | Scale | Residual Blocks | Parameters | PSNR | Pre-trained Model |
-|-------|-------|-----------------|------------|------|-------------------|
+| Model | Scale | Residual Blocks | Parameters | PSNR |
+|-------|-------|-----------------|------------|------|
 | WDSR  | x2    | 16              | 1.19M      | 34.36 dB |
