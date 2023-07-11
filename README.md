@@ -63,7 +63,7 @@ If you want to modify more options, see the `core/option.py` file.
 ## Evaluation
 
 Trained model is evaluated on DIV2K validation 100 images.
-
+Pre-trained Model can be found in outputs_a
 ```bash
 WDSR-A
 python eval.py --model "WDSR-A" \
